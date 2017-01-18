@@ -1,0 +1,17 @@
+<ion-view title="Friends List" id="page3" style="">
+  <ion-nav-buttons side="right" scroll="true" class="has-header">
+    <button ng-click="logoutLogic();" class="button icon No Icon"> Logout</button>
+  </ion-nav-buttons>
+  <ion-content padding="true" scroll="false" class="has-header">
+    <ion-list>
+      <ion-item class="item-remove-animate" ng-repeat="item in friends | orderBy:'fullName'" type="item-text-wrap">
+        <h2>{{item.fullName}}</h2>
+        <p>{{item.username}}</p>
+      </ion-item>
+    </ion-list>
+    <button ui-sref="tabsController.friendInfo" class="button button-assertive button-large button-clear icon ion-android-add-circle" style="float: right">
+
+    </button>
+  </ion-content>
+
+</ion-view>

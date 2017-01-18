@@ -1,0 +1,13 @@
+<ion-view title="Map" id="page2" style="">
+  <ion-nav-buttons side="right" scroll="false" class="has-header">
+    <button ng-click="logoutLogic();" class="button icon No Icon"> Logout</button>
+  </ion-nav-buttons>
+  <ion-content style="width: 100%; height: 100%;" padding="true" scroll="false" class="has-header">
+      <ion-toggle  ng-model="setValue" ng-click="toggleVisibility()">
+        Toggle Visibility
+      </ion-toggle>
+    <ng-map default-style="false" style="width: 100%; height: 78%;"  center="[43.1610, -77.6109]" zoom="11">
+      <marker ng-repeat="p in points" label="{{p.name}}" position="{{p.latitude}},{{p.longitude}}"></marker>
+    </ng-map>
+  </ion-content>
+</ion-view>

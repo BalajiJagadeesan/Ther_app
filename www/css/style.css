@@ -1,0 +1,18 @@
+/* Empty. Add your own CSS if you like */
+
+.logo{
+  margin:auto;
+  color:#ef473a;
+  font-size:32px;
+  line-height: 2em;
+  background-image: url("../img/logo.png");
+  background-size: 32px 32px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 1em;
+}
+
+.card{
+  background: transparent;
+  box-shadow: none;
+}

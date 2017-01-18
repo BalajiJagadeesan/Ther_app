@@ -1,0 +1,17 @@
+<ion-view title="Pending Requests" id="page4" style="">
+  <ion-nav-buttons side="right" scroll="false" class="has-header">
+    <button ng-click="logoutLogic();" class="button icon No Icon"> Logout</button>
+  </ion-nav-buttons>
+  <ion-content padding="true" scroll="false" class="has-header">
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="item in friendRequests | orderBy:'uname'" type="item-text-wrap">
+        <!--<img ng-src="{{item.face}}">-->
+        <h2>{{item.uname}}</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+        <ion-option-button class="button-balanced" ng-click="newMemberToList(item.uname,item)">
+          Add
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
