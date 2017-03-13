@@ -1,6 +1,8 @@
 # Ther App
 The mobile application keeps the user informed with the location of their friends or family. The application is for family members who wants to track their children-whether they reached/left school or close family members reached home safely. It can also be used by friends/roommates to notify the other of their location during emergency situations.
 
+Sample link : https://therapp.herokuapp.com/#/welcome
+
 ## Features:
 The application can be accessed only if the user is a valid member (enrolled in the system). This can be possible by enabling user authentication even before accessing the core functionality of the database. If the user tries to log in with the wrong password 5 or more times, the system will lock down and the user cannot access his account for some time.
  If the user logins in successfully, he/she can access the functionality of the application. The user has couple of options to do now.
